@@ -4,8 +4,19 @@
     <title>Nisha Yadav  Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+	/>
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -28,7 +39,189 @@
 
 /*======================================
 //--//-->   ABOUT
+
+
 ======================================*/
+
+/* cirtificate */
+.certificate-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 20px;  /* Adds padding on left and right */
+}
+
+.certificate-row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center; /* Centers the certificates within the container */
+}
+
+.certificate-item {
+  flex: 0 0 auto;
+  width: 250px;  /* Adjust the width to your preferred size */
+  margin: 0 15px;  /* Space between items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certificate-img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the image when it's in the middle */
+.certificate-item.middle {
+  transform: scale(1.1);  /* Scale up when it's in the middle */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);  /* Stronger shadow for middle item */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.certificate-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.certificate-row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.certificate-item {
+  flex: 0 0 auto;
+  width: 250px;  /* Adjust the width to your preferred size */
+  margin: 0 10px;  /* Space between items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certificate-img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the image when it's in the middle */
+.certificate-item.middle {
+  transform: scale(1.1);  /* Scale up when it's in the middle */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);  /* Stronger shadow for middle item */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* another */
+
+.two-column-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 20px;
+  list-style: none;
+  padding: 0;
+}
+
+
+.card ul li i {
+  margin-right: 8px;  /* Adds space between the icon and the text */
+  font-size: 1.2rem;  /* Adjust the size of the icon */
+}
+
+.card ul li {
+  color: #00d4ff;  /* Blue text for list items */
+}
+.card {
+        background-color: #1e1e1e;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card-title {
+        color: #b9a461;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+      }
+      .card ul {
+        list-style: none;
+        padding: 0;
+      }
+      .card ul li::before {
+        content: "• ";
+        color: hsla(249, 100%, 51%, 0.735);
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        color: #00d4ff;
+      }
+    
+		
 
 .about-mf .box-shadow-full {
   padding-top: 4rem;
@@ -192,8 +385,7 @@
 			            <h2>A Full Stack and Python Developer</h2>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
-			            <p><span id="Nisha"></span><a href="www.linkedin.com/in/nisha-yadav
-										96681a294/" class="btn btn-primary py-3 px-4">GitHub</a></span> 
+			            <p><span id="Nisha"></span><a href="https://github.com/NishaYadav-prog" class="btn btn-primary py-3 px-4">GitHub</a></span> 
 							</p>
 		            </div>
 		          </div>
@@ -322,9 +514,283 @@
 		</div>
     </section>
 
+		<section>
+			<div class="container py-5">
+				<h2 class="section-title">Skills</h2>
+				<div class="row g-4">
+					<!-- Basics -->
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Programming Languages</h5>
+							<ul>
+								<li><i class="fas fa-code"></i> C</li>
+								<li><i class="fas fa-cogs"></i> C++</li>
+								<li><i class="fab fa-java"></i> Java</li>
+								<li><i class="fab fa-python"></i> Python</li>
+							</ul>
+						</div>
+					</div>
 
-
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Frontend Development</h5>
+							<ul class="two-column-list">
+								<li><i class="bi bi-filetype-html text-info me-2"></i>HTML</li>
+								<li><i class="bi bi-filetype-css text-info me-2"></i>CSS</li>
+								<li><i class="bi bi-filetype-js text-info me-2"></i>JavaScript</li>
+								<li><i class="bi bi-palette text-info me-2"></i>Tailwind CSS</li>
+								<li><i class="bi bi-vector-pen text-info me-2"></i>Figma</li>
+								<li><i class="bi bi-code-slash text-info me-2"></i>React.js</li>
+                <li><i class="bi bi-box text-info me-2"></i>Redux</li>
+                <li><i class="bi bi-bootstrap-fill text-info me-2"></i>Bootstrap</li>
+							</ul>
+							
+						</div>
+					</div>
 	
+					<!-- Backend Development -->
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title"> Backend Development</h5>
+							<ul>
+								<li><i class="bi bi-cpu text-info me-2"></i>Node.js</li>
+								<li><i class="bi bi-hdd-network text-info me-2"></i>Express.js</li>
+								<li><i class="bi bi-diagram-3 text-info me-2"></i>Mongoose</li>
+							</ul>
+							
+						</div>
+					</div>
+	
+					<!-- Databases -->
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title"> Databases</h5>
+							<ul>
+								<li><i class="bi bi-database-fill text-info me-2"></i>MongoDB</li>
+								<li><i class="bi bi-database-check text-info me-2"></i>MySQL</li>
+							</ul>
+							
+						</div>
+					</div>
+					<!-- Cloud & Deployment -->
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Cloud & Deployment</h5>
+							<ul>
+								<li><i class="bi bi-cloud-upload-fill text-info me-2"></i>Netlify</li>
+								<li><i class="bi bi-git text-info me-2"></i>GitHub</li>
+								<li><i class="bi bi-cloud-check-fill text-info me-2"></i>AWS</li>
+							</ul>
+							
+						</div>
+					</div>
+	
+					<!-- Extras -->
+					<div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Machine Learning & AI</h5>
+							<ul>
+								<li><i class="bi bi-robot text-info me-2"></i>Machine Learning (ML)</li>
+								<li><i class="bi bi-eyeglasses text-info me-2"></i>OpenCV</li>
+								<li><i class="bi bi-diagram-3-fill text-info me-2"></i>TensorFlow</li>
+								<li><i class="bi bi-braces text-info me-2"></i>NumPy</li>
+								<li><i class="bi bi-table text-info me-2"></i>Pandas</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- project -->
+		<!-- <section>
+			<div class="container py-5">
+				<h2 class="section-title">Projects</h2>
+				<div class="row g-4"> -->
+					<!-- Basics -->
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Basics</h5>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>Other Languages</li>
+							</ul>
+						</div>
+					</div> -->
+
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Frontend Frameworks</h5>
+							<ul>
+								<li>Bootstrap</li>
+								<li>React.js</li>
+								<li>Angular.js</li>
+								<li>Vue.js</li>
+							</ul>
+						</div>
+					</div> -->
+	
+					<!-- Design -->
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Design</h5>
+							<ul>
+								<li>Figma</li>
+								<li>Adobe XD</li>
+								<li>Photoshop</li>
+								<li>Sketch</li>
+								<li>Invision</li>
+							</ul>
+						</div>
+					</div> -->
+	
+					<!-- Backend -->
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Backend</h5>
+							<ul>
+								<li>Node.js</li>
+								<li>Python</li>
+								<li>Ruby</li>
+								<li>PHP</li>
+								<li>Java</li>
+							</ul>
+						</div>
+					</div> -->
+	
+					<!-- Backend Frameworks -->
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Backend Frameworks</h5>
+							<ul>
+								<li>Node.js (Express.js)</li>
+								<li>Ruby on Rails</li>
+								<li>Django (Python)</li>
+								<li>Laravel (PHP)</li>
+								<li>Databases</li>
+							</ul>
+						</div>
+					</div> -->
+	
+					<!-- Extras -->
+					<!-- <div class="col-md-4">
+						<div class="card p-3">
+							<h5 class="card-title">Extras</h5>
+							<ul>
+								<li>Git</li>
+								<li>GitHub</li>
+								<li>Media Query</li>
+								<li>npm</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+     -->
+
+		    <!-- My Certificates -->
+				<section>
+					<div class="container py-5">
+							<h2 class="section-title">My Certificates</h2>
+							<div class="certificate-container">
+									<button class="arrow left" id="prevBtn">&#8592;</button>
+									<div class="certificate-row">
+											<div class="certificate-item">
+													<img src="images/certificate1.png" alt="Certificate 1" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate2.png" alt="Certificate 2" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate3.png" alt="Certificate 3" class="certificate-img">
+											</div>
+	
+											<div class="certificate-item">
+													<img src="images/certificate4.png" alt="Certificate 4" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate5.png" alt="Certificate 5" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate6.png" alt="Certificate 6" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate7.png" alt="Certificate 7" class="certificate-img">
+											</div>
+											<div class="certificate-item">
+													<img src="images/certificate8.png" alt="Certificate 8" class="certificate-img">
+											</div>
+											<!-- Add more certificate images here -->
+									</div>
+									<button class="arrow right" id="nextBtn">&#8594;</button>
+							</div>
+					</div>
+			</section>
+	
+			<script>
+					const prevBtn = document.getElementById('prevBtn');
+					const nextBtn = document.getElementById('nextBtn');
+					const certificateRow = document.querySelector('.certificate-row');
+					const certificates = document.querySelectorAll('.certificate-item');
+					const totalItems = certificates.length;  // Use dynamic total number of items
+					let currentIndex = 0;
+					let scrollAmount = 0;
+	
+					// Function to move to next certificate
+					function moveToNext() {
+							if (currentIndex < totalItems - 1) {
+									currentIndex++;
+									scrollAmount += 250; // Width of each certificate item
+									certificateRow.style.transform = `translateX(-${scrollAmount}px)`;
+							} else {
+									currentIndex = 0;
+									scrollAmount = 0;
+									certificateRow.style.transform = `translateX(0px)`;
+							}
+							updateMiddleItem();
+					}
+	
+					// Function to move to previous certificate
+					function moveToPrev() {
+							if (currentIndex > 0) {
+									currentIndex--;
+									scrollAmount -= 250; // Width of each certificate item
+									certificateRow.style.transform = `translateX(-${scrollAmount}px)`;
+							} else {
+									currentIndex = totalItems - 1;
+									scrollAmount = (totalItems - 1) * 250;
+									certificateRow.style.transform = `translateX(-${scrollAmount}px)`;
+							}
+							updateMiddleItem();
+					}
+	
+					// Update the middle certificate with a special class for scaling and shadow
+					function updateMiddleItem() {
+							certificates.forEach((item, index) => {
+									item.classList.remove('middle');  // Remove class from all
+									if (index === currentIndex) {
+											item.classList.add('middle');  // Add 'middle' class to the current item
+									}
+							});
+					}
+	
+					// Add event listeners to arrows
+					prevBtn.addEventListener('click', moveToPrev);
+					nextBtn.addEventListener('click', moveToNext);
+	
+					// Auto-slide the images every 3 seconds
+					setInterval(moveToNext, 3000); // Adjust time as needed
+			</script>
+
+
+<!-- resume-section -->
+
+
+
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
